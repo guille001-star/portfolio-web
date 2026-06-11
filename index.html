@@ -3,46 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guillermo Oyarzo | Data Analyst & Python Developer</title>
-    <meta name="description" content="Data Analyst especializado en automatización, extracción de datos y Python.">
+    <title>Austral Data Labs | Soluciones Inteligentes de Datos</title>
+    <meta name="description" content="Líderes en automatización de datos, extracción de PDFs y desarrollo de soluciones empresariales con Python e IA.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
         /* ========================================
-           DESIGN TOKENS (Sistema de Diseño)
+           DESIGN TOKENS - ULTRA PREMIUM
            ======================================== */
         :root {
-            /* Colores - Paleta Análoga con Acento Dorado */
-            --color-primary: #0a1929;
-            --color-secondary: #1e3a5f;
-            --color-tertiary: #2d5a87;
-            --color-accent: #d4af37;
-            --color-accent-light: #f4d03f;
-            --color-neutral-50: #f8f9fa;
-            --color-neutral-100: #e9ecef;
-            --color-neutral-200: #dee2e6;
-            --color-neutral-600: #6c757d;
-            --color-neutral-800: #343a40;
-            --color-neutral-900: #212529;
-            --color-text: #2c3e50;
-            --color-text-light: #5a6c7d;
+            /* Paleta Ultra-Premium Tech */
+            --color-primary: #0a0e27;
+            --color-secondary: #1a1f3a;
+            --color-tertiary: #2a2f4a;
+            --color-gold: #d4af37;
+            --color-gold-light: #f4d03f;
+            --color-cyan: #00d9ff;
+            --color-cyan-glow: rgba(0, 217, 255, 0.3);
+            --color-green: #00ff88;
+            --color-green-glow: rgba(0, 255, 136, 0.3);
+            --color-bg: #f5f5f7;
+            --color-white: #ffffff;
+            --color-text: #1a1f3a;
+            --color-text-light: #6b7280;
+            --color-border: rgba(212, 175, 55, 0.2);
             
-            /* Tipografía - Escala Major Third (1.25) */
-            --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-family-mono: 'JetBrains Mono', 'Courier New', monospace;
+            /* Tipografía */
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
             
-            --text-xs: 0.8rem;
+            --text-xs: 0.75rem;
             --text-sm: 0.875rem;
             --text-base: 1rem;
-            --text-lg: 1.25rem;
-            --text-xl: 1.563rem;
-            --text-2xl: 1.953rem;
-            --text-3xl: 2.441rem;
-            --text-4xl: 3.052rem;
+            --text-lg: 1.125rem;
+            --text-xl: 1.25rem;
+            --text-2xl: 1.5rem;
+            --text-3xl: 2rem;
+            --text-4xl: 2.5rem;
+            --text-5xl: 3.5rem;
+            --text-6xl: 4.5rem;
             
-            /* Espaciado - Sistema de 8px */
+            /* Espaciado */
             --space-xs: 0.25rem;
             --space-sm: 0.5rem;
             --space-md: 1rem;
@@ -50,23 +54,25 @@
             --space-xl: 2rem;
             --space-2xl: 3rem;
             --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            --space-5xl: 8rem;
             
-            /* Bordes y Sombras */
-            --radius-sm: 4px;
-            --radius-md: 8px;
-            --radius-lg: 12px;
-            --radius-xl: 16px;
+            /* Efectos */
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 32px;
             --radius-full: 9999px;
             
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-sm: 0 2px 8px rgba(10, 14, 39, 0.08);
+            --shadow-md: 0 8px 24px rgba(10, 14, 39, 0.12);
+            --shadow-lg: 0 16px 48px rgba(10, 14, 39, 0.16);
+            --shadow-glow-cyan: 0 0 40px var(--color-cyan-glow);
+            --shadow-glow-gold: 0 0 40px rgba(212, 175, 55, 0.3);
             
-            /* Transiciones */
-            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         /* ========================================
@@ -83,154 +89,244 @@
         }
         
         body {
-            font-family: var(--font-family-base);
+            font-family: var(--font-body);
             font-size: var(--text-base);
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--color-text);
-            background: var(--color-neutral-50);
+            background: var(--color-bg);
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
         }
         
         /* ========================================
-           BANNER HERO
+           NAVIGATION BAR
            ======================================== */
-        .banner {
-            height: 320px;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            position: relative;
-            overflow: hidden;
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--space-md) 0;
+            transition: all var(--transition-base);
+        }
+        
+        .navbar-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: var(--text-xl);
+            color: var(--color-white);
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cyan));
+            border-radius: var(--radius-sm);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: var(--text-lg);
         }
         
-        .banner::before {
+        .logo-text {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: var(--space-xl);
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: var(--text-sm);
+            transition: color var(--transition-base);
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-cyan);
+            transition: width var(--transition-base);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--color-cyan);
+        }
+        
+        .nav-cta {
+            padding: var(--space-sm) var(--space-lg);
+            background: var(--color-gold);
+            color: var(--color-primary);
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--text-sm);
+            transition: all var(--transition-base);
+        }
+        
+        .nav-cta:hover {
+            background: var(--color-gold-light);
+            box-shadow: var(--shadow-glow-gold);
+            transform: translateY(-2px);
+        }
+        
+        /* ========================================
+           HERO SECTION
+           ======================================== */
+        .hero {
+            min-height: 100vh;
+            background: var(--color-primary);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: var(--space-5xl) var(--space-xl) var(--space-4xl);
+        }
+        
+        .hero::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+            background: 
+                radial-gradient(circle at 20% 30%, var(--color-cyan-glow) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
         }
         
-        .banner-content {
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(0, 217, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.4;
+        }
+        
+        .hero-content {
             position: relative;
             z-index: 2;
+            max-width: 1000px;
             text-align: center;
-            padding: var(--space-xl);
-            max-width: 900px;
         }
         
-        .banner-content h1 {
-            font-size: var(--text-4xl);
-            font-weight: 700;
-            color: white;
-            letter-spacing: -0.02em;
-            margin-bottom: var(--space-md);
-            line-height: 1.2;
-        }
-        
-        .banner-content p {
-            font-size: var(--text-lg);
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 400;
-            letter-spacing: 0.02em;
-        }
-        
-        /* ========================================
-           CONTAINER & LAYOUT
-           ======================================== */
-        .container {
-            max-width: 960px;
-            margin: -80px auto var(--space-3xl);
-            padding: 0 var(--space-xl);
-            position: relative;
-            z-index: 3;
-        }
-        
-        /* ========================================
-           PROFILE HEADER
-           ======================================== */
-        .profile-header {
-            background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-2xl);
-            box-shadow: var(--shadow-xl);
-            text-align: center;
-            margin-bottom: var(--space-xl);
-            border: 1px solid var(--color-neutral-100);
-        }
-        
-        .avatar {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--color-secondary), var(--color-tertiary));
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--text-4xl);
-            font-weight: 700;
-            margin: 0 auto var(--space-xl);
-            border: 6px solid white;
-            box-shadow: var(--shadow-lg);
-            letter-spacing: -0.02em;
-        }
-        
-        .profile-header h2 {
-            color: var(--color-primary);
-            font-size: var(--text-2xl);
-            font-weight: 700;
-            margin-bottom: var(--space-sm);
-            letter-spacing: -0.01em;
-        }
-        
-        .profile-header .title {
-            color: var(--color-text-light);
-            font-size: var(--text-lg);
-            font-weight: 400;
-            margin-bottom: var(--space-xl);
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: var(--space-lg);
-            margin-top: var(--space-lg);
-        }
-        
-        .contact-info a {
-            color: var(--color-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            display: flex;
+        .hero-badge {
+            display: inline-flex;
             align-items: center;
             gap: var(--space-sm);
-            transition: color var(--transition-base);
+            padding: var(--space-sm) var(--space-lg);
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--color-gold);
+            border-radius: var(--radius-full);
+            color: var(--color-gold);
             font-size: var(--text-sm);
+            font-weight: 500;
+            margin-bottom: var(--space-xl);
+            font-family: var(--font-mono);
         }
         
-        .contact-info a:hover {
-            color: var(--color-accent);
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--color-green);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--color-green);
+            animation: blink 2s infinite;
         }
         
-        /* ========================================
-           CTA BUTTONS
-           ======================================== */
-        .cta-buttons {
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: var(--text-6xl);
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: 1.1;
+            margin-bottom: var(--space-lg);
+            letter-spacing: -0.03em;
+        }
+        
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+        
+        .hero-subtitle {
+            font-size: var(--text-xl);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: var(--space-2xl);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        
+        .hero-cta-group {
             display: flex;
-            justify-content: center;
             gap: var(--space-md);
+            justify-content: center;
             flex-wrap: wrap;
-            margin-top: var(--space-xl);
+            margin-bottom: var(--space-3xl);
         }
         
         .btn {
-            padding: var(--space-md) var(--space-xl);
+            padding: var(--space-md) var(--space-2xl);
             border-radius: var(--radius-full);
             text-decoration: none;
             font-weight: 600;
@@ -241,385 +337,1112 @@
             gap: var(--space-sm);
             border: 2px solid transparent;
             cursor: pointer;
+            font-family: var(--font-body);
         }
         
-        .btn-primary {
-            background: var(--color-accent);
+        .btn-gold {
+            background: var(--color-gold);
             color: var(--color-primary);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-glow-gold);
         }
         
-        .btn-primary:hover {
-            background: var(--color-accent-light);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
+        .btn-gold:hover {
+            background: var(--color-gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.5);
         }
         
-        .btn-secondary {
-            background: white;
-            color: var(--color-secondary);
-            border-color: var(--color-secondary);
+        .btn-outline {
+            background: transparent;
+            color: var(--color-white);
+            border-color: var(--color-cyan);
         }
         
-        .btn-secondary:hover {
-            background: var(--color-secondary);
-            color: white;
-            transform: translateY(-2px);
+        .btn-outline:hover {
+            background: var(--color-cyan);
+            color: var(--color-primary);
+            box-shadow: var(--shadow-glow-cyan);
+            transform: translateY(-3px);
         }
         
         /* ========================================
-           CARDS
+           STATS BAR
            ======================================== */
-        .card {
-            background: white;
-            border-radius: var(--radius-xl);
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-xl);
+            max-width: 900px;
+            margin: 0 auto;
             padding: var(--space-2xl);
-            margin-bottom: var(--space-xl);
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--color-neutral-100);
-            transition: box-shadow var(--transition-base);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            backdrop-filter: blur(10px);
         }
         
-        .card:hover {
-            box-shadow: var(--shadow-lg);
+        .stat-item {
+            text-align: center;
         }
         
-        .card h3 {
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+        
+        /* ========================================
+           SECTIONS
+           ======================================== */
+        .section {
+            padding: var(--space-5xl) var(--space-xl);
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-4xl);
+        }
+        
+        .section-tag {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-md);
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--color-cyan);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: var(--space-md);
+            font-family: var(--font-mono);
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: var(--text-5xl);
+            font-weight: 700;
             color: var(--color-primary);
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        
+        .section-subtitle {
+            font-size: var(--text-lg);
+            color: var(--color-text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* ========================================
+           SERVICES GRID
+           ======================================== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .service-card {
+            background: var(--color-white);
+            padding: var(--space-2xl);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--color-border);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-gold), var(--color-cyan));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-base);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-cyan);
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-3xl);
+            margin-bottom: var(--space-lg);
+            position: relative;
+        }
+        
+        .service-icon::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cyan));
+            border-radius: var(--radius-md);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+        
+        .service-card:hover .service-icon::after {
+            opacity: 1;
+        }
+        
+        .service-card h3 {
+            font-family: var(--font-display);
             font-size: var(--text-xl);
             font-weight: 700;
-            margin-bottom: var(--space-lg);
-            padding-bottom: var(--space-md);
-            border-bottom: 3px solid var(--color-accent);
-            letter-spacing: -0.01em;
-        }
-        
-        .card p {
+            color: var(--color-primary);
             margin-bottom: var(--space-md);
-            color: var(--color-text);
+        }
+        
+        .service-card p {
+            color: var(--color-text-light);
             line-height: 1.7;
+            margin-bottom: var(--space-lg);
         }
         
-        .card ul {
+        .service-features {
             list-style: none;
-            padding-left: 0;
-            margin-top: var(--space-md);
         }
         
-        .card ul li {
+        .service-features li {
+            padding: var(--space-xs) 0;
             padding-left: var(--space-xl);
             position: relative;
-            margin-bottom: var(--space-sm);
-            line-height: 1.7;
+            color: var(--color-text);
+            font-size: var(--text-sm);
         }
         
-        .card ul li::before {
-            content: '▸';
+        .service-features li::before {
+            content: '✓';
             position: absolute;
-            left: var(--space-sm);
-            color: var(--color-accent);
-            font-weight: bold;
-            font-size: var(--text-lg);
+            left: 0;
+            color: var(--color-green);
+            font-weight: 700;
         }
         
         /* ========================================
-           SKILLS GRID
+           ABOUT / LEADERSHIP
            ======================================== */
-        .skills-grid {
+        .about-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            grid-template-columns: 1fr 1.5fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+        }
+        
+        .leader-card {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            color: var(--color-white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .leader-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--color-cyan-glow) 0%, transparent 50%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .leader-avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cyan));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--color-primary);
+            margin: 0 auto var(--space-lg);
+            position: relative;
+            z-index: 2;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .leader-info {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .leader-info h4 {
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .leader-info .role {
+            color: var(--color-gold);
+            font-size: var(--text-sm);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .leader-social {
+            display: flex;
+            justify-content: center;
             gap: var(--space-md);
             margin-top: var(--space-lg);
         }
         
-        .skill-tag {
-            background: linear-gradient(135deg, var(--color-neutral-50), white);
-            color: var(--color-secondary);
-            padding: var(--space-sm) var(--space-md);
+        .leader-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            text-decoration: none;
+            transition: all var(--transition-base);
+            font-size: var(--text-lg);
+        }
+        
+        .leader-social a:hover {
+            background: var(--color-gold);
+            color: var(--color-primary);
+            transform: translateY(-3px);
+        }
+        
+        .about-content h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: var(--space-lg);
+            line-height: 1.2;
+        }
+        
+        .about-content p {
+            color: var(--color-text-light);
+            margin-bottom: var(--space-lg);
+            font-size: var(--text-lg);
+            line-height: 1.8;
+        }
+        
+        .values-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+        }
+        
+        .value-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            padding: var(--space-md);
+            background: var(--color-white);
             border-radius: var(--radius-md);
-            text-align: center;
-            font-weight: 500;
-            font-size: var(--text-sm);
-            border: 1px solid var(--color-neutral-200);
+            border: 1px solid var(--color-border);
             transition: all var(--transition-base);
         }
         
-        .skill-tag:hover {
-            background: var(--color-secondary);
-            color: white;
-            border-color: var(--color-secondary);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
+        .value-item:hover {
+            border-color: var(--color-cyan);
+            transform: translateX(4px);
+        }
+        
+        .value-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cyan));
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-xl);
+            flex-shrink: 0;
+        }
+        
+        .value-item h5 {
+            font-family: var(--font-display);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .value-item p {
+            font-size: var(--text-sm);
+            color: var(--color-text-light);
+            margin: 0;
+            line-height: 1.5;
         }
         
         /* ========================================
-           PROJECT BOX
+           CASE STUDY
            ======================================== */
-        .project-box {
-            background: linear-gradient(135deg, var(--color-neutral-50), white);
-            border-left: 4px solid var(--color-accent);
-            padding: var(--space-xl);
-            border-radius: var(--radius-lg);
-            margin-top: var(--space-lg);
+        .case-study {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--radius-xl);
+            padding: var(--space-3xl);
+            color: var(--color-white);
+            position: relative;
+            overflow: hidden;
         }
         
-        .project-box h4 {
+        .case-study::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--color-cyan-glow) 0%, transparent 70%);
+            opacity: 0.5;
+        }
+        
+        .case-study-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .case-tag {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-md);
+            background: var(--color-gold);
             color: var(--color-primary);
-            font-size: var(--text-lg);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
             font-weight: 700;
-            margin-bottom: var(--space-md);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-lg);
         }
         
-        .tech-stack {
+        .case-study h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+            line-height: 1.2;
+        }
+        
+        .case-study p {
+            font-size: var(--text-lg);
+            opacity: 0.9;
+            margin-bottom: var(--space-xl);
+            line-height: 1.7;
+        }
+        
+        .case-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: var(--space-xl);
+            margin: var(--space-2xl) 0;
+        }
+        
+        .metric {
+            text-align: center;
+            padding: var(--space-lg);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+        }
+        
+        .metric-value {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--color-green);
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+            text-shadow: 0 0 20px var(--color-green-glow);
+        }
+        
+        .metric-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .tech-tags {
             display: flex;
             flex-wrap: wrap;
             gap: var(--space-sm);
-            margin-top: var(--space-lg);
+            margin-top: var(--space-xl);
         }
         
         .tech-tag {
-            background: var(--color-primary);
-            color: white;
             padding: var(--space-xs) var(--space-md);
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid var(--color-cyan);
+            color: var(--color-cyan);
             border-radius: var(--radius-full);
             font-size: var(--text-xs);
+            font-family: var(--font-mono);
             font-weight: 500;
-            font-family: var(--font-family-mono);
         }
         
-        .impact-box {
-            margin-top: var(--space-lg);
-            padding: var(--space-md);
-            background: rgba(212, 175, 55, 0.1);
+        /* ========================================
+           CTA SECTION
+           ======================================== */
+        .cta-section {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4xl) var(--space-2xl);
+            text-align: center;
+            border: 2px solid var(--color-border);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+        }
+        
+        .cta-section > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.02em;
+        }
+        
+        .cta-section p {
+            font-size: var(--text-lg);
+            color: var(--color-text-light);
+            margin-bottom: var(--space-2xl);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-lg);
+            max-width: 800px;
+            margin: var(--space-2xl) auto 0;
+        }
+        
+        .contact-card {
+            padding: var(--space-xl);
+            background: var(--color-bg);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: var(--color-text);
+            transition: all var(--transition-base);
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+        
+        .contact-card:hover {
+            border-color: var(--color-cyan);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
             border-radius: var(--radius-md);
-            border-left: 3px solid var(--color-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-2xl);
+            flex-shrink: 0;
+        }
+        
+        .contact-info {
+            text-align: left;
+        }
+        
+        .contact-info .label {
+            font-size: var(--text-xs);
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .contact-info .value {
+            font-weight: 600;
+            color: var(--color-primary);
+            font-size: var(--text-base);
         }
         
         /* ========================================
            FOOTER
            ======================================== */
         footer {
-            text-align: center;
-            padding: var(--space-2xl) var(--space-xl);
-            color: var(--color-text-light);
+            background: var(--color-primary);
+            color: rgba(255, 255, 255, 0.7);
+            padding: var(--space-3xl) var(--space-xl) var(--space-xl);
+            margin-top: var(--space-5xl);
+        }
+        
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: var(--space-3xl);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .footer-brand h4 {
+            font-family: var(--font-display);
+            font-size: var(--text-xl);
+            color: var(--color-white);
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer-brand p {
             font-size: var(--text-sm);
-            border-top: 1px solid var(--color-neutral-200);
-            margin-top: var(--space-3xl);
+            line-height: 1.7;
+            max-width: 400px;
+        }
+        
+        .footer-column h5 {
+            color: var(--color-gold);
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-md);
+            font-weight: 600;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .footer-column ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: var(--text-sm);
+            transition: color var(--transition-base);
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--color-cyan);
+        }
+        
+        .footer-bottom {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: var(--text-sm);
+            flex-wrap: wrap;
+            gap: var(--space-md);
+        }
+        
+        .footer-bottom .location {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
         }
         
         /* ========================================
            RESPONSIVE
            ======================================== */
-        @media (max-width: 768px) {
-            .banner {
-                height: 280px;
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
             }
             
-            .banner-content h1 {
-                font-size: var(--text-2xl);
+            .hero h1 {
+                font-size: var(--text-4xl);
             }
             
-            .banner-content p {
-                font-size: var(--text-base);
+            .section-title {
+                font-size: var(--text-3xl);
             }
             
-            .container {
-                margin-top: -60px;
-                padding: 0 var(--space-md);
+            .about-grid {
+                grid-template-columns: 1fr;
             }
             
-            .profile-header {
-                padding: var(--space-xl);
+            .values-list {
+                grid-template-columns: 1fr;
             }
             
-            .profile-header h2 {
-                font-size: var(--text-xl);
-            }
-            
-            .card {
-                padding: var(--space-xl);
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: var(--space-md);
-            }
-            
-            .skills-grid {
-                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
             }
         }
         
-        @media (max-width: 480px) {
-            .banner-content h1 {
-                font-size: var(--text-xl);
+        @media (max-width: 640px) {
+            .hero {
+                padding: var(--space-4xl) var(--space-md) var(--space-3xl);
             }
             
-            .avatar {
-                width: 120px;
-                height: 120px;
+            .hero h1 {
+                font-size: var(--text-3xl);
+            }
+            
+            .hero-subtitle {
+                font-size: var(--text-base);
+            }
+            
+            .stats-bar {
+                grid-template-columns: repeat(2, 1fr);
+                padding: var(--space-lg);
+            }
+            
+            .stat-number {
                 font-size: var(--text-2xl);
             }
             
-            .cta-buttons {
-                flex-direction: column;
+            .section {
+                padding: var(--space-3xl) var(--space-md);
             }
             
-            .btn {
-                width: 100%;
-                justify-content: center;
+            .case-study {
+                padding: var(--space-2xl);
+            }
+            
+            .case-metrics {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- BANNER HERO -->
-    <div class="banner">
-        <div class="banner-content">
-            <h1>GUILLERMO ENRIQUE OYARZO</h1>
-            <p>Data Analyst · Python Developer · Automation Specialist</p>
-        </div>
-    </div>
-
-    <div class="container">
-        
-        <!-- PROFILE HEADER -->
-        <div class="profile-header">
-            <div class="avatar">GO</div>
-            <h2>Guillermo Enrique Oyarzo</h2>
-            <p class="title">Transformando datos no estructurados en insights accionables</p>
-            
-            <div class="contact-info">
-                <a href="mailto:geopat001@gmail.com">
-                    <span>📧</span>
-                    <span>geopat001@gmail.com</span>
-                </a>
-                <a href="https://wa.me/5492804685815">
-                    <span>📱</span>
-                    <span>+54 9 280 468-5815</span>
-                </a>
-                <a href="#">
-                    <span>🌎</span>
-                    <span>Remote Ready</span>
-                </a>
-            </div>
-            
-            <div class="cta-buttons">
-                <a href="mailto:geopat001@gmail.com" class="btn btn-primary">
-                    <span>📩</span>
-                    <span>Contactar</span>
-                </a>
-                <a href="https://wa.me/5492804685815" class="btn btn-secondary">
-                    <span>💬</span>
-                    <span>WhatsApp</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- ABOUT -->
-        <div class="card">
-            <h3>🚀 Sobre Mí</h3>
-            <p>Data Analyst especializado en transformar datos no estructurados en información limpia y accionable. Ayudo a organizaciones a automatizar sus flujos de trabajo de datos, reduciendo hasta un <strong>80% el tiempo de procesamiento manual</strong> mediante soluciones en Python.</p>
-            <p>Mi experiencia se centra en extraer información de documentos complejos (PDFs, reportes, archivos legales) y convertirla en bases de datos estructuradas listas para análisis y toma de decisiones.</p>
-            
-            <h4 style="margin-top: var(--space-xl); color: var(--color-primary); font-size: var(--text-lg); font-weight: 600;">Lo que hago:</h4>
-            <ul>
-                <li>Extracción y procesamiento de datos desde PDFs, documentos y fuentes web</li>
-                <li>Construcción de pipelines ETL automatizados con Python (Pandas, NumPy, BeautifulSoup)</li>
-                <li>Diseño y gestión de bases de datos PostgreSQL</li>
-                <li>Generación de reportes automatizados y dashboards</li>
-                <li>Integración de APIs y soluciones de web scraping</li>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">AD</div>
+                <span class="logo-text">AUSTRAL DATA LABS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#casos">Casos de Éxito</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <a href="#contacto" class="nav-cta">Solicitar Propuesta</a>
         </div>
+    </nav>
 
-        <!-- EXPERIENCE -->
-        <div class="card">
-            <h3>💼 Experiencia</h3>
-            <h4 style="color: var(--color-primary); font-size: var(--text-lg); font-weight: 700;">Data Analyst & Python Developer (Freelance)</h4>
-            <p style="color: var(--color-text-light); font-size: var(--text-sm); margin-bottom: var(--space-md);">Independent Projects · 2025 - Presente · Remote</p>
-            <p>Desarrollo de soluciones de procesamiento y automatización de datos para organizaciones del sector público.</p>
-            <ul>
-                <li>Sistema integral de gestión de datos procesando documentos PDF de 300+ páginas</li>
-                <li>Extracción y cruce automatizado de 1,200+ registros usando Python</li>
-                <li>Base de datos PostgreSQL en la nube (Railway) con acceso en tiempo real</li>
-                <li>Reducción del tiempo de procesamiento manual de 40+ horas a menos de 15 minutos</li>
-            </ul>
-            <div class="tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Flask</span>
-                <span class="tech-tag">SQLAlchemy</span>
-                <span class="tech-tag">ReportLab</span>
-                <span class="tech-tag">Git</span>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span></span>
+                <span>LÍDERES EN AUTOMATIZACIÓN DE DATOS</span>
             </div>
-        </div>
-
-        <!-- PROJECT -->
-        <div class="card">
-            <h3>🏆 Proyecto Destacado</h3>
-            <div class="project-box">
-                <h4>Sistema de Gestión de Datos para el Sector Público</h4>
-                <p>Sistema web integral para la gestión de procesos de designación docente en el sector público educativo de la Provincia del Chubut, Argentina.</p>
-                <ul style="margin-top: var(--space-md);">
-                    <li><strong>PDF Parsing automatizado:</strong> Extracción de 1,200+ registros desde documentos oficiales de 300+ páginas</li>
-                    <li><strong>Base de datos en la nube:</strong> PostgreSQL en Railway con acceso en tiempo real</li>
-                    <li><strong>Registro vía QR:</strong> Sistema de inscripción mobile-first para zonas remotas</li>
-                    <li><strong>Reportes automáticos:</strong> Generación de documentos oficiales y órdenes de mérito en PDF</li>
-                </ul>
-                <div class="impact-box">
-                    <strong>📊 Impacto:</strong> Reducción del 95% en tiempo de carga manual y habilitación de inscripción online para docentes en zonas remotas (eliminando viajes de 500+ km).
+            <h1>
+                Transformamos datos complejos en 
+                <span class="highlight">decisiones estratégicas</span>
+            </h1>
+            <p class="hero-subtitle">
+                Somos una empresa especializada en automatización inteligente, extracción de datos masivos y desarrollo de soluciones empresariales a medida con Python e Inteligencia Artificial.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#contacto" class="btn btn-gold">
+                    <span>🚀</span>
+                    <span>Solicitar Propuesta</span>
+                </a>
+                <a href="#casos" class="btn btn-outline">
+                    <span>Ver Casos de Éxito</span>
+                    <span>→</span>
+                </a>
+            </div>
+            
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Reducción de tiempo</div>
                 </div>
-                <div class="tech-stack">
+                <div class="stat-item">
+                    <div class="stat-number">1.2K+</div>
+                    <div class="stat-label">Registros procesados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Páginas analizadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Sistemas operativos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="servicios">
+        <div class="section-header">
+            <div class="section-tag">Nuestros Servicios</div>
+            <h2 class="section-title">Soluciones que impulsan tu negocio</h2>
+            <p class="section-subtitle">
+                Ofrecemos servicios integrales de datos diseñados para empresas que buscan eficiencia, precisión y escalabilidad.
+            </p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📄</div>
+                <h3>Extracción Inteligente de PDFs</h3>
+                <p>Convertimos documentos PDF complejos en bases de datos estructuradas listas para análisis.</p>
+                <ul class="service-features">
+                    <li>Procesamiento de documentos de 300+ páginas</li>
+                    <li>Reconocimiento de tablas y estructuras</li>
+                    <li>Validación automática de datos</li>
+                    <li>Exportación a cualquier formato</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Automatización de Procesos</h3>
+                <p>Eliminamos tareas repetitivas con scripts y pipelines automatizados que trabajan 24/7.</p>
+                <ul class="service-features">
+                    <li>Pipelines ETL personalizados</li>
+                    <li>Integración de sistemas y APIs</li>
+                    <li>Reportes automáticos programados</li>
+                    <li>Monitoreo y alertas en tiempo real</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🗄️</div>
+                <h3>Desarrollo de Bases de Datos</h3>
+                <p>Diseñamos e implementamos bases de datos robustas y escalables en la nube.</p>
+                <ul class="service-features">
+                    <li>PostgreSQL y SQL avanzado</li>
+                    <li>Modelado de datos optimizado</li>
+                    <li>Migración de sistemas legados</li>
+                    <li>Backup y recuperación automática</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Aplicaciones Web a Medida</h3>
+                <p>Desarrollamos plataformas web profesionales adaptadas a tus procesos de negocio.</p>
+                <ul class="service-features">
+                    <li>Diseño responsive mobile-first</li>
+                    <li>Integración con sistemas existentes</li>
+                    <li>Panel de administración intuitivo</li>
+                    <li>Seguridad empresarial</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>Web Scraping & APIs</h3>
+                <p>Recolectamos datos de cualquier fuente web de forma ética, legal y eficiente.</p>
+                <ul class="service-features">
+                    <li>Extracción masiva de datos públicos</li>
+                    <li>Integración con APIs REST</li>
+                    <li>Limpieza y normalización</li>
+                    <li>Cumplimiento normativo</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Business Intelligence</h3>
+                <p>Transformamos tus datos en dashboards interactivos y reportes accionables.</p>
+                <ul class="service-features">
+                    <li>Dashboards en tiempo real</li>
+                    <li>KPIs personalizados</li>
+                    <li>Análisis predictivo básico</li>
+                    <li>Visualizaciones profesionales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / LEADERSHIP -->
+    <section class="section" id="nosotros">
+        <div class="section-header">
+            <div class="section-tag">Sobre Nosotros</div>
+            <h2 class="section-title">Liderazgo con visión técnica</h2>
+            <p class="section-subtitle">
+                Combinamos experiencia en gestión empresarial con expertise técnico de alto nivel.
+            </p>
+        </div>
+        
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="leader-card">
+                    <div class="leader-avatar">GO</div>
+                    <div class="leader-info">
+                        <h4>Guillermo E. Oyarzo</h4>
+                        <div class="role">Fundador & CEO</div>
+                        <p style="font-size: var(--text-sm); opacity: 0.9; margin-top: var(--space-md);">
+                            +15 años de experiencia en educación y tecnología. Líder técnico especializado en automatización y procesamiento de datos a escala empresarial.
+                        </p>
+                        <div class="leader-social">
+                            <a href="mailto:geopat001@gmail.com" title="Email">📧</a>
+                            <a href="https://wa.me/5492804685815" title="WhatsApp">💬</a>
+                            <a href="#" title="LinkedIn">🔗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <h3>Una empresa nacida de la necesidad real de automatizar</h3>
+                <p>
+                    <strong>Austral Data Labs</strong> nace de la experiencia directa resolviendo problemas complejos de procesamiento de datos en el sector público y educativo. Entendemos los desafíos reales de las organizaciones porque los hemos vivido en primera persona.
+                </p>
+                <p>
+                    Nuestra misión es democratizar el acceso a tecnologías de automatización de datos, permitiendo que empresas de todos los tamaños compitan en la era digital con herramientas de clase mundial.
+                </p>
+                
+                <div class="values-list">
+                    <div class="value-item">
+                        <div class="value-icon">🎯</div>
+                        <div>
+                            <h5>Precisión Absoluta</h5>
+                            <p>Cero errores en datos críticos de negocio</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">⚡</div>
+                        <div>
+                            <h5>Velocidad de Entrega</h5>
+                            <p>Soluciones operativas en semanas, no meses</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🔒</div>
+                        <div>
+                            <h5>Seguridad Primero</h5>
+                            <p>Protección de datos como prioridad</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🤝</div>
+                        <div>
+                            <h5>Acompañamiento</h5>
+                            <p>Soporte continuo post-implementación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section class="section" id="casos">
+        <div class="section-header">
+            <div class="section-tag">Caso de Éxito</div>
+            <h2 class="section-title">Resultados que hablan por sí solos</h2>
+            <p class="section-subtitle">
+                Un ejemplo real de cómo transformamos un proceso manual de días en minutos.
+            </p>
+        </div>
+        
+        <div class="case-study">
+            <div class="case-study-content">
+                <div class="case-tag">⭐ Proyecto Destacado</div>
+                <h3>Sistema Integral de Gestión de Datos para el Sector Público</h3>
+                <p>
+                    Desarrollamos una plataforma web completa para automatizar los procesos de designación docente en la Provincia del Chubut, Argentina. El sistema procesa documentos oficiales de 300+ páginas, extrae información crítica y genera reportes automáticos.
+                </p>
+                
+                <div class="case-metrics">
+                    <div class="metric">
+                        <div class="metric-value">95%</div>
+                        <div class="metric-label">Menos tiempo manual</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">1.200+</div>
+                        <div class="metric-label">Registros procesados</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">500km</div>
+                        <div class="metric-label">Viajes eliminados</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">24/7</div>
+                        <div class="metric-label">Disponibilidad</div>
+                    </div>
+                </div>
+                
+                <p style="margin-top: var(--space-xl);">
+                    <strong>🎯 Impacto social:</strong> Habilitamos la inscripción online para docentes en zonas remotas de la Patagonia, eliminando la necesidad de viajar cientos de kilómetros solo para inscribirse en un concurso.
+                </p>
+                
+                <div class="tech-tags">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">Flask</span>
                     <span class="tech-tag">PostgreSQL</span>
                     <span class="tech-tag">ReportLab</span>
                     <span class="tech-tag">QR Code</span>
-                    <span class="tech-tag">Web Scraping</span>
+                    <span class="tech-tag">PDF Parsing</span>
+                    <span class="tech-tag">Railway Cloud</span>
+                    <span class="tech-tag">Mobile-First</span>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- SKILLS -->
-        <div class="card">
-            <h3>🛠️ Habilidades Técnicas</h3>
-            <div class="skills-grid">
-                <div class="skill-tag">Python</div>
-                <div class="skill-tag">SQL</div>
-                <div class="skill-tag">PostgreSQL</div>
-                <div class="skill-tag">Pandas</div>
-                <div class="skill-tag">NumPy</div>
-                <div class="skill-tag">Data Analysis</div>
-                <div class="skill-tag">Data Extraction</div>
-                <div class="skill-tag">ETL</div>
-                <div class="skill-tag">Automation</div>
-                <div class="skill-tag">Web Scraping</div>
-                <div class="skill-tag">BeautifulSoup</div>
-                <div class="skill-tag">Flask</div>
-                <div class="skill-tag">SQLAlchemy</div>
-                <div class="skill-tag">ReportLab</div>
-                <div class="skill-tag">Git</div>
-                <div class="skill-tag">REST APIs</div>
-                <div class="skill-tag">Regex</div>
-                <div class="skill-tag">PDF Processing</div>
+    <!-- CTA / CONTACT -->
+    <section class="section" id="contacto">
+        <div class="cta-section">
+            <div class="section-tag">Hablemos</div>
+            <h2>¿Listo para automatizar tu negocio?</h2>
+            <p>
+                Contanos tu desafío y te proponemos una solución a medida. Primera consulta sin cargo.
+            </p>
+            
+            <div class="hero-cta-group">
+                <a href="mailto:geopat001@gmail.com" class="btn btn-gold">
+                    <span>📩</span>
+                    <span>Solicitar Propuesta</span>
+                </a>
+                <a href="https://wa.me/5492804685815" class="btn btn-outline" style="color: var(--color-primary); border-color: var(--color-primary);">
+                    <span>💬</span>
+                    <span>WhatsApp Directo</span>
+                </a>
+            </div>
+            
+            <div class="contact-grid">
+                <a href="mailto:geopat001@gmail.com" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <div class="label">Email</div>
+                        <div class="value">geopat001@gmail.com</div>
+                    </div>
+                </a>
+                <a href="https://wa.me/5492804685815" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <div class="label">WhatsApp</div>
+                        <div class="value">+54 9 280 468-5815</div>
+                    </div>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">🌎</div>
+                    <div class="contact-info">
+                        <div class="label">Cobertura</div>
+                        <div class="value">Remoto · Todo LATAM</div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- LANGUAGES -->
-        <div class="card">
-            <h3>🌎 Idiomas</h3>
-            <ul>
-                <li><strong>Español:</strong> Nativo</li>
-                <li><strong>Inglés:</strong> Competencia Profesional</li>
-            </ul>
-        </div>
-
-    </div>
-
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Guillermo Enrique Oyarzo · Construido con pasión y Python</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h4>🌟 AUSTRAL DATA LABS</h4>
+                <p>
+                    Transformamos datos complejos en decisiones estratégicas. Automatización inteligente para empresas que quieren crecer.
+                </p>
+            </div>
+            
+            <div class="footer-column">
+                <h5>Servicios</h5>
+                <ul>
+                    <li><a href="#servicios">Extracción de PDFs</a></li>
+                    <li><a href="#servicios">Automatización</a></li>
+                    <li><a href="#servicios">Bases de Datos</a></li>
+                    <li><a href="#servicios">Desarrollo Web</a></li>
+                    <li><a href="#servicios">Business Intelligence</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h5>Empresa</h5>
+                <ul>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#casos">Casos de Éxito</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div>© 2026 Austral Data Labs. Todos los derechos reservados.</div>
+            <div class="location">
+                <span>📍</span>
+                <span>Patagonia Argentina · Operando globalmente</span>
+            </div>
+        </div>
     </footer>
 
 </body>
